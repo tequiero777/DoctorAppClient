@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
-    <com.doctorapp.basic.ui.view.ProgressWheel
+    <com.doctorapp.doctorappclient.basic.ui.view.ProgressWheel
         android:layout_gravity="center"
         android:id="@+id/customer_progressBar"
         android:layout_width="100dp"

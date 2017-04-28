@@ -14,14 +14,14 @@ public class Constant {
 	/** 地址端口*/
 	public static String IP_ADDRESS = PropertiesUtil.getProperty("IP_ADDRESS");
 	/*** ws地址 ***/
-	public static final String SERVER_URL = IP_ADDRESS+"/JinChuangServer";
-//	public static final String SERVER_URL = IP_ADDRESS+"/DWMSWS";
+//	public static final String SERVER_URL = IP_ADDRESS+"/JinChuangServer";
+	public static final String SERVER_URL = IP_ADDRESS+"/DWMSWS";
 	
 	public static final String KEY_STORE_PASSWORD = "123456";
 	public static final String KEY_STORE_TRUST_PASSWORD = "123456";
 	public static final int HTTPS_PORT = 8443;
-	public static final String KEY_STORE_CLIENT_PATH = "com/doctorapp/basic/core/certificate/client.key.p12";
-	public static final String KEY_STORE_TRUST_PATH = "com/doctorapp/basic/core/certificate/client.truststore";
+	public static final String KEY_STORE_CLIENT_PATH = "com/doctorapp/doctorappclient/basic/core/certificate/client.key.p12";
+	public static final String KEY_STORE_TRUST_PATH = "com/doctorapp/doctorappclient/basic/core/certificate/client.truststore";
 
 	/** 服务器webservice地址前缀 */
 	public static final String SERVER_WEBSERVICE_URL_PREFIX = SERVER_URL + "/ws";
