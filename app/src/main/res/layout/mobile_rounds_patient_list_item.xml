@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/patient_card_body">
+    
+    <RelativeLayout 
+        android:id="@+id/patient_card_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+         <TextView 
+            style="@style/patient_card_no"
+            android:id="@+id/patient_card_label"
+            android:text="病案号："/>
+          <TextView 
+            android:id="@+id/patient_bed_no"
+            android:layout_alignParentRight="true"
+            style="@style/patient_card_bed_no"
+            android:text="32731"
+            />
+        <TextView 
+            android:layout_toRightOf="@id/patient_card_label"
+            android:layout_toLeftOf="@id/patient_bed_no"
+            android:id="@+id/medical_record_number"
+            style="@style/patient_card_no"
+            android:text="1111"/>
+
+       <ImageView
+           android:id="@+id/patient_card_img"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignBottom="@+id/patient_card_focus"
+           android:layout_alignLeft="@+id/patient_card_label"
+           android:layout_below="@id/patient_card_label"
+           android:layout_marginRight="10dp"
+           android:layout_toLeftOf="@+id/medical_record_number"
+            />
+
+       <TextView 
+           android:id="@+id/patient_card_name"
+           android:layout_below="@id/patient_card_label"
+           android:layout_toRightOf="@id/patient_card_img"
+           style="@style/patient_card_name_info"
+           android:text="吴小明"/>
+       
+       <TextView 
+           android:id="@+id/patient_card_age"
+           android:layout_marginTop="10dp"
+           android:gravity="center_vertical"
+           android:layout_below="@id/patient_card_label"
+           android:layout_toRightOf="@id/patient_card_name"
+           style="@style/patient_card_age"
+           android:text="22岁"/>
+       
+       <TextView 
+           android:id="@+id/patient_card_diagnosis"
+           android:layout_below="@id/patient_card_name"
+           android:layout_toRightOf="@id/patient_card_img"
+           style="@style/patient_card_diagnosis_info"
+           android:text="诊断可能很长很长很长很长长长长长长长长长长长长"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:background="@drawable/patient_card_bottom"
+        android:id="@+id/patient_card_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+       <TextView 
+           android:id="@+id/patient_bottom_card_level"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:drawableLeft="@drawable/nurse_leve"
+           android:drawablePadding="5dp"
+           android:layout_height="wrap_content"
+           android:textColor="@color/white"
+           android:singleLine="true"
+           android:text="二级护理"/>
+       <TextView 
+           android:id="@+id/patient_bottom_card_name"
+           android:layout_width="wrap_content"
+           android:layout_weight="1"
+           android:textColor="@color/white"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/doc_name"
+           android:drawablePadding="5dp"
+           android:singleLine="true"
+           android:text="张三"/>
+       <TextView 
+           android:id="@+id/patient_bottom_card_date"
+           android:layout_width="wrap_content"
+           android:textColor="@color/white"
+           android:layout_weight="1"
+           android:drawablePadding="5dp"
+           android:layout_height="wrap_content"
+           android:drawableLeft="@drawable/patient_card_date"
+           android:singleLine="true"
+           android:text="20141213"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

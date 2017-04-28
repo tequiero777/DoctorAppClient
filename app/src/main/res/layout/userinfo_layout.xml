@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+	
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/welcome_bj" >
+
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/welcome_bj"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:text="个人中心"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp" 
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/img_nan" />
+
+        
+		<TextView
+            android:id="@+id/userinfo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_alignBottom="@+id/user_image"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="15.0dip"
+            android:textColor="@color/oa_text_color"
+            android:textSize="14.0sp" />
+		
+		<TextView
+            android:id="@+id/userinfo_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/userinfo_title"
+            android:layout_toRightOf="@+id/user_image"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15.0dip"
+            android:paddingBottom="10dp"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/register_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/linear_boder" 
+        android:visibility="gone">
+
+	    <ImageView 
+	        android:id="@+id/register_image"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/register_image"/>
+        <TextView
+	        android:id="@+id/register"
+	        android:layout_width="wrap_content"
+	        android:layout_height="50.0dip"
+	        android:layout_toRightOf="@+id/register_image"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="5.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="注册人脸"
+	        android:textSize="16.0sp" />
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="50.0dip"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:gravity="center_vertical"
+	        android:paddingRight="10.0dip"
+	        android:text="仅对管理人员开放"
+	        android:textColor="@color/oa_text_color"
+	        android:textSize="14.0sp" />
+    </RelativeLayout>
+	
+	<RelativeLayout
+        android:id="@+id/checkupdate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/linear_boder"
+        android:orientation="horizontal" >
+
+	    <ImageView 
+	        android:id="@+id/update_image"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/checkupdate_image"/>
+	    
+        <TextView
+            android:id="@+id/update_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50.0dip"
+            android:layout_toRightOf="@+id/update_image"
+            android:textSize="16sp"
+            android:paddingLeft="5.0dip"
+            android:gravity="center_vertical"
+            android:focusable="false"
+            android:text="检查更新" />
+
+        <ProgressBar 
+            android:id="@+id/update_probar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/update_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:progressDrawable="@drawable/myprogress_style_blue"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/aboutus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/linear_boder"
+        android:orientation="horizontal" >
+
+        <ImageView 
+	        android:id="@+id/aboutus_image"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/aboutus_image"/>
+        
+        <TextView
+	        android:id="@+id/aboutus"
+	        android:layout_width="match_parent"
+	        android:layout_height="50.0dip"
+	        android:layout_toRightOf="@+id/aboutus_image"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="5.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="关于我们"
+	        android:textSize="16.0sp" />
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/linear_boder"
+        android:orientation="horizontal" >
+
+        <ImageView 
+	        android:id="@+id/setting_image"
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:background="@drawable/setting_image"/>
+        
+        <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="50.0dip"
+	        android:layout_toRightOf="@+id/setting_image"
+	        android:drawablePadding="1.0dip"
+	        android:gravity="center_vertical"
+	        android:paddingLeft="5.0dip"
+	        android:paddingRight="10.0dip"
+	        android:text="更多设置"
+	        android:textSize="16.0sp" />
+    </RelativeLayout>
+</LinearLayout>

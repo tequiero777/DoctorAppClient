@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools" tools:context="com.tianjian.appointment.activity.AppointDeptListActivity">
+
+    <FrameLayout
+        android:id="@+id/mainFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radioGroup" >
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/home"
+            style="@style/basicTabRidoMenu"
+            android:checked="true"
+            android:drawableTop="@drawable/main_home_selector"
+            android:text="数据报表" />
+
+        <RadioButton
+            android:id="@+id/dict"
+            style="@style/basicTabRidoMenu"
+            android:drawableTop="@drawable/main_dict_selector"
+            android:text="电子病历" />
+
+      <!--   <RadioButton
+            android:id="@+id/rem"
+            style="@style/basicTabRidoMenu"
+            android:drawableTop="@drawable/main_rem_selector"
+            android:text="消息提醒" /> -->
+
+        <RadioButton
+            android:id="@+id/my"
+            style="@style/basicTabRidoMenu"
+            android:drawableTop="@drawable/main_my_selector"
+            android:text="个人中心" />
+    </RadioGroup>
+
+</RelativeLayout>

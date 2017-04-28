@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/oa_text_color"
+            android:text="起"/>
+        
+        <TextView 
+            android:id="@+id/fewm_report_sdate"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/oa_text_color"/>
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="—"
+            android:textColor="@color/oa_text_color"/>
+        
+        <TextView 
+            android:id="@+id/fewm_report_edate"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/oa_text_color"/>
+
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/oa_text_color"
+            android:text="止"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+	    <LinearLayout 
+	        android:layout_width="90dp"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:gravity="center"
+	        android:background="#ffffff"
+	        android:id="@+id/fewm_dayreport_layout">
+	         
+	        <TextView 
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:padding="10dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/oa_text_color"
+	            android:text=" "
+	            android:background="#662c65ee"/>
+	        
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:padding="10dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/oa_text_color"
+	            android:text="门诊人数"/>
+	        
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:padding="10dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/oa_text_color"
+	            android:text="日均门诊"/>
+	        
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>    
+	       <TextView 
+	           android:layout_width="wrap_content"
+	           android:layout_height="40dp"
+	           android:gravity="center"
+	           android:padding="10dp"
+	            android:textSize="14sp"
+	           android:textStyle="bold"
+	           android:textColor="@color/oa_text_color"
+	           android:text="急诊人数"/>
+	        
+	         <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>
+	         <TextView 
+		           android:layout_width="wrap_content"
+		           android:layout_height="40dp"
+		           android:gravity="center"
+		          android:padding="10dp"
+	            android:textSize="14sp"
+		           android:textStyle="bold"
+		           android:textColor="@color/oa_text_color"
+		           android:text="日均急诊"/>
+	        
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>   
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	           android:padding="10dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/oa_text_color"
+	            android:text="入院人数"/>
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>
+	            
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:padding="10dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/oa_text_color"
+	            android:text="出院人数"/>
+	        
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>
+	        
+	            
+	       <TextView 
+	           android:layout_width="wrap_content"
+	           android:layout_height="40dp"
+	           android:gravity="center"
+	           android:padding="10dp"
+	            android:textSize="14sp"
+	           android:textStyle="bold"
+	           android:textColor="@color/oa_text_color"
+	           android:text="好转率%"/>
+	        
+	        <View 
+	            android:layout_width="fill_parent"
+	            android:layout_height="2dp"
+	            android:background="#f4f4f4"/>
+	            
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:gravity="center"
+	            android:padding="10dp"
+	            android:textSize="14sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/oa_text_color"
+	            android:text="死亡率%"/>
+	            
+	    </LinearLayout>
+	    
+	    <com.doctorapp.basic.ui.view.HorizontalListView
+	        android:id="@+id/frem_report_listView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:numColumns="3">
+	   </com.doctorapp.basic.ui.view.HorizontalListView>
+   </LinearLayout>
+</LinearLayout>

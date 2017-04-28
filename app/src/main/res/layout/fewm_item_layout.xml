@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/fewm_item_date"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+	    android:textSize="14sp"
+	    android:textStyle="bold"
+        android:background="#442c65ee"
+        android:textColor="@color/oa_text_color"/>
+    
+    <TextView 
+        android:id="@+id/fewm_item_mzrs"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+	    android:textSize="14sp"
+        android:textColor="@color/oa_text_color"
+        android:text="门诊人数"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>
+    <TextView 
+        android:id="@+id/fewm_item_rjmz"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/oa_text_color"
+        android:text="日均门诊"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>    
+   <TextView 
+       android:id="@+id/fewm_item_jzrs"
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:gravity="center"
+       android:padding="10dp"
+       android:textSize="14sp"
+       android:textColor="@color/oa_text_color"
+       android:text="急诊人数"/>
+    
+     <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>
+     <TextView 
+         android:id="@+id/fewm_item_rjjz"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/oa_text_color"
+        android:text="日均急诊"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>   
+    <TextView 
+        android:id="@+id/fewm_item_ryrs"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/oa_text_color"
+        android:text="入院人数"/>
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>
+        
+    <TextView 
+        android:id="@+id/fewm_item_cyrs"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/oa_text_color"
+        android:text="出院人数"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>
+    
+        
+   <TextView 
+       android:id="@+id/fewm_item_zyhzl"
+       android:layout_width="fill_parent"
+       android:layout_height="40dp"
+       android:gravity="center"
+       android:padding="10dp"
+       android:textSize="14sp"
+       android:textColor="@color/oa_text_color"
+       android:text="好转率%"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#f4f4f4"/>
+        
+    <TextView 
+        android:id="@+id/fewm_item_bsl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="14sp"
+        android:textColor="@color/oa_text_color"
+        android:text="病死率%"/>	
+</LinearLayout>

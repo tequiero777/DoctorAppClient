@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2c65ee" >
+
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#2c65ee"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:text="数据报表"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+        
+        <Button
+            android:id="@+id/setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/ic_top_bar_category" />
+    </RelativeLayout> -->
+	
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+        
+        <Button 
+            android:id="@+id/report_pre"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/report_pre_next_selector"
+            android:textColor="@color/white"
+            android:text="前一天"/>
+        
+        <TextView 
+            android:id="@+id/report_date"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/oa_text_color"/>
+
+        <Button 
+            android:id="@+id/report_next"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/report_pre_next_selector"
+            android:textColor="@color/white"
+            android:text="后一天"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:id="@+id/dayreport_layout">
+      	
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/oa_text_color"
+                android:text="门诊人数"/>
+            
+            <TextView 
+                android:id="@+id/mzrs_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#f4f4f4"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/oa_text_color"
+                android:text="急诊人数"/>
+            
+            <TextView 
+                android:id="@+id/jzrs_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#f4f4f4"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/oa_text_color"
+                android:text="入院人数"/>
+            
+            <TextView 
+                android:id="@+id/ryrs_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#f4f4f4"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/oa_text_color"
+                android:text="出院人数"/>
+            
+            <TextView 
+                android:id="@+id/cyrs_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#f4f4f4"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/oa_text_color"
+                android:text="治愈好转"/>
+            
+            <TextView 
+                android:id="@+id/zyhz_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#f4f4f4"/>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal">
+            
+            <TextView 
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/oa_text_color"
+                android:text="死亡人数"/>
+            
+            <TextView 
+                android:id="@+id/swrs_value"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

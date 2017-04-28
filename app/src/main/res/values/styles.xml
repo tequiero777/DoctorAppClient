@@ -1,0 +1,219 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>  
+    </style>
+
+    <!-- 手机端的 基础框架的 style -->
+    <style name="basc_text_size">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="basc_menu_text_size">
+        <item name="android:textSize">24sp</item>
+    </style>
+    <!-- 消息接收的 popwindow 弹出窗体动画效果   -->
+     <style name="AnimBottomOutShow" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    
+     <style name="basicTabRidoMenu" parent="basc_text_size">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/bottombar_textcolor_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/bottombar_itembg_selector</item>
+    </style>
+     
+    <!-- 自定义progressDialog -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog"> 
+    <item name="android:windowFrame">@null</item> 
+        <item name="android:windowIsFloating">true</item> 
+        <item name="android:windowContentOverlay">@null</item> 
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item> 
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item> 
+    </style> 
+       
+    <style name="CustomProgressDialog" parent="@style/CustomDialog"> 
+         <item name="android:windowBackground">@android:color/transparent</item> 
+        <item name="android:windowNoTitle">true</item> 
+    </style> 
+    
+    <!-- 菜单的texview 样式 -->
+    <style name="textViewStyle">
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:textColor">@color/mainMenu_1</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    
+     <style name="editTextStyle">
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColorHint">#bdbdbd</item>
+    </style>
+    
+      <style name="buttonStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textsize</item>
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+    
+      <style name="customProgressBar" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/custom_progress_bar</item>
+        <item name="android:layout_width">21dip</item>
+        <item name="android:layout_height">21dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minWidth">100dip</item>
+        <item name="android:maxWidth">100dip</item>
+        <item name="android:minHeight">100dip</item>
+        <item name="android:maxHeight">100dip</item>
+    </style>
+    <style name="AnimBottom1" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    
+    <!-- 自定义 加载的dialog 样式 -->
+    <style name="customer_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--模糊-->
+   		<item name="android:windowCloseOnTouchOutside">false</item><!-- 点击不消失 -->
+    </style>
+    
+    <!-- 科室 -->
+    <style name="dept_item_style" >
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/oa_text_color</item>
+    </style>
+    
+    <style name="patient_card_no">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/patient_card_text_size1</item>
+        <item name="android:textColor">@color/patient_card_text_color1</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    
+    <!--患者选项卡的 床号的 样式  -->
+    <style name="patient_card_bed_no">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/patient_card_text_size1</item>
+        <item name="android:textColor">@color/patient_card_text_color2</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <!-- 患者选项卡的 名字 style -->
+    <style name="patient_card_name_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">@dimen/patient_card_name_size</item>
+        <item name="android:textColor">@color/patient_card_bed_no_bac</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 患者列表卡 里面的 年龄style -->
+    <style name="patient_card_age">
+       <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textSize">@dimen/patient_card_name_size</item>
+        <item name="android:textColor">@color/patient_card_text_color1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <!-- 患者列表卡 里面的 诊断信息的style -->
+    <style name="patient_card_diagnosis_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+         <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/patient_card_text_size1</item>
+        <item name="android:textColor">@color/patient_card_text_color1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <!-- 患者列表卡 里面的 关注的style -->
+    <style name="patient_card_focus">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:textSize">@dimen/patient_card_text_size</item>
+        <item name="android:textColor">@color/patient_card_text_color1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    
+    <style name="MyWidget" parent="@android:style/Theme" />
+    
+    <style name="MyWidget.TabText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tab_indicator_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <!-- Common list view styles -->
+    <style name="MyWidget.ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:cacheColorHint">#00ffffff</item>
+        <item name="android:dividerHeight">2px</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:fadeScrollbars">true</item>
+    </style>
+    
+    <style name="tab_button_sty">
+         <item name="android:button">@null</item>
+         <item name="android:gravity">center</item>
+         <item name="android:textColor">@color/goods_onoff_color_selector</item>
+         <item name="android:background">@drawable/goods_on_off_button_selector</item>
+     </style>
+     
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Holo.DialogWhenLarge">
+    </style>
+    <!-- 自定义弹出框 -->
+    <style name="text_18_fffafa">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="text_16_666666">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">@color/grey</item>
+    </style>
+</resources>

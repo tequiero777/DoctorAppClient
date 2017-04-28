@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/aliceblue">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2c65ee" >
+
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/welcome_bj"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:text="数据报表"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+	<LinearLayout android:id="@+id/reportform_tab_title"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#2c65ee"
+    	android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+    	android:orientation="horizontal"
+    	android:gravity="center">
+	</LinearLayout>
+
+	<!-- <TextView android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/title_bg_color"/>  -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

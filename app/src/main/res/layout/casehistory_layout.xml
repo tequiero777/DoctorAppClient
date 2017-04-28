@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/patient_list_bac"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2c65ee" >
+
+        <TextView
+	        android:id="@+id/title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/welcome_bj"
+	        android:gravity="center"
+	        android:padding="10dp"
+	        android:text="电子病历"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+        
+    </RelativeLayout>
+    
+    
+    <FrameLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/search_et_input"
+           android:layout_gravity="center_vertical"
+           android:padding="10dp"
+           android:layout_margin="5dp"
+           android:drawableLeft="@drawable/patient_list_search_normal"
+           android:drawablePadding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/search_edittext_shape"
+           android:textSize="18sp"
+           android:imeOptions="actionSearch"
+           android:inputType="text"
+           android:hint="请输入科室关键字进行筛选"/>
+
+       <ImageView
+           android:visibility="gone"
+           android:layout_marginRight="15dp"
+           android:src="@drawable/iv_delete_bg"
+           android:id="@+id/search_iv_delete"
+           android:layout_gravity="right|center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+    </FrameLayout>
+    
+    <GridView
+        android:layout_margin="10dp"
+        android:id="@+id/dept_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/holo_blue_dark"
+        android:verticalSpacing="2dp"
+		android:horizontalSpacing="2dp"
+        android:divider="#f4f4f4"
+        android:dividerHeight="2dp"
+        android:numColumns="auto_fit">
+   </GridView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_bj"
+     >
+
+    <ImageView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/welcome_logo"
+        />
+	<LinearLayout android:id="@+id/no_connection"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:layout_above="@+id/hospital_name"
+	    android:layout_marginBottom="100dp"
+	    android:visibility="gone"
+	    >
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:text="网络未连接，请检查网络设置"
+	        android:textSize="18sp"
+	        android:textColor="@color/black"
+	        android:layout_marginBottom="30dp"
+	        />
+	    <TextView android:id="@+id/connection_retry"
+	        android:layout_width="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:text="打开网络"
+	        android:textColor="@color/white"
+	        android:padding="10dp"
+	        android:background="@drawable/login_login_but_selector"
+	        android:textSize="22sp"
+	        />
+	</LinearLayout>
+    
+    <TextView android:id="@+id/hospital_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="北京天健源达科技有限公司"
+        android:textColor="#abd5ff"
+        android:textSize="14sp"
+        android:layout_marginBottom="50dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/patient_list_bac"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/welcome_bj" >
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_white" />
+
+        <TextView
+            android:id="@+id/patientList_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="病人列表"
+            android:textColor="@color/white"
+            android:textSize="20sp" >
+        </TextView>
+    </RelativeLayout>
+    
+    
+    <FrameLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/patient_search_et_input"
+           android:layout_gravity="center_vertical"
+           android:padding="10dp"
+           android:layout_margin="5dp"
+           android:drawableLeft="@drawable/patient_list_search_normal"
+           android:drawablePadding="5dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/search_edittext_shape"
+           android:textSize="18sp"
+           android:imeOptions="actionSearch"
+           android:inputType="text"
+           android:hint="请输入病人姓名或床号进行筛选"/>
+
+       <ImageView
+           android:visibility="gone"
+           android:layout_marginRight="15dp"
+           android:src="@drawable/iv_delete_bg"
+           android:id="@+id/patient_search_iv_delete"
+           android:layout_gravity="right|center_vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+    </FrameLayout>
+    
+    <ListView 
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+        android:id="@+id/patient_newin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp"
+        android:divider="@android:color/transparent"
+        android:numColumns="3"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="5dp"
+        >
+    </ListView>
+
+</LinearLayout>
