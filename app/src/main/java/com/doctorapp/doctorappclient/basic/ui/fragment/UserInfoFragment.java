@@ -186,7 +186,7 @@ public class UserInfoFragment extends Fragment{
 					int verson = Integer.valueOf(StringUtil.isBlank(item.getVERSION())?"0":item.getVERSION());
 					 int currentVerson = 1;
 					 try {
-						 currentVerson = getActivity().getPackageManager().getPackageInfo( "com.doctorapp",0).versionCode;
+						 currentVerson = getActivity().getPackageManager().getPackageInfo( "com.doctorapp.doctorappclient",0).versionCode;
 					} catch (NameNotFoundException e) {
 						e.printStackTrace();
 					}

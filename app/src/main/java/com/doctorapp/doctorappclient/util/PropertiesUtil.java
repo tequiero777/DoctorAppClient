@@ -9,16 +9,8 @@ public class PropertiesUtil {
 	 private static Properties props;
 	 static{
 		 if(props == null){
-			 props = new Properties();
-		 }
-		  try {
-		   InputStream in = PropertiesUtil
-				   				.class
-				   				.getResourceAsStream("/assets/config.properties"); 
-		   props.load(in);
-		  } catch (Exception e1) {
-		   e1.printStackTrace();
-		  }
+		    props = new Properties();
+         }
 	 }
 	 
 	 public static String getProperty(String key){

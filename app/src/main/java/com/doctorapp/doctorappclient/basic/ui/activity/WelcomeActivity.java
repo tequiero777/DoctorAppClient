@@ -297,7 +297,7 @@ public class WelcomeActivity extends BaseActivity{
 		// getPackageName()是你当前类的包名，0代表是获取版本信息
 		PackageInfo packInfo = new PackageInfo();
 			try {
-				packInfo = packageManager.getPackageInfo( "com.doctorapp",0);
+				packInfo = packageManager.getPackageInfo( "com.doctorapp.doctorappclient",0);
 			} catch (Exception e) {
 				e.printStackTrace();
 		}
@@ -309,6 +309,7 @@ public class WelcomeActivity extends BaseActivity{
 	}
 
 	private void postUpdate(HashMap<String, Object> request){
+		System.out.println("------------------------appUpdateWs----"+"version"+"----"+"Constant.TENANT_ID");
 		NetWorkHepler.postWsData("appUpdateWs", "process", request, new INetWorkCallBack() {
 			private SoapObject objectResult;
 			@Override
@@ -349,7 +350,7 @@ public class WelcomeActivity extends BaseActivity{
 					 int verson = Integer.valueOf(StringUtil.isBlank(au.getVERSION())?"0":au.getVERSION());
 					 int currentVerson = 1;
 					 try {
-						 currentVerson = getPackageManager().getPackageInfo( "com.doctorapp",0).versionCode;
+						 currentVerson = getPackageManager().getPackageInfo( "com.doctorapp.doctorappclient",0).versionCode;
 					 } catch (NameNotFoundException e) {
 						 e.printStackTrace();
 					 }

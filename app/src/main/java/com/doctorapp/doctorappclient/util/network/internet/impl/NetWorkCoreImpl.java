@@ -105,6 +105,9 @@ public class NetWorkCoreImpl  implements INetWorkCore {
 	public Object postWsData(String addressName,String methodName, HashMap<String, Object> request)  {
 		// 实例化SoapObject对象
 		SoapObject soapObject = null;
+		System.out.println(addressName);
+		System.out.println(methodName);
+
 		if (StringUtil.empty(addressName)) {
 			String ns = Constant.getServerNs("basic");
 			soapObject = new SoapObject(ns, methodName);

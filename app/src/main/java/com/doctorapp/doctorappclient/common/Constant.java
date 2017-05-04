@@ -12,7 +12,7 @@ public class Constant {
 
 	/*********************************** http配置信息*****************************************/
 	/** 地址端口*/
-	public static String IP_ADDRESS = PropertiesUtil.getProperty("IP_ADDRESS");
+	public static String IP_ADDRESS = "http://192.168.191.1:8080";
 	/*** ws地址 ***/
 //	public static final String SERVER_URL = IP_ADDRESS+"/JinChuangServer";
 	public static final String SERVER_URL = IP_ADDRESS+"/DWMSWS";
@@ -41,8 +41,8 @@ public class Constant {
 	/**
 	 * 租户id
 	 */
-	public static String TENANT_ID = PropertiesUtil.getProperty("TENANT_ID");
-	public static String PASSWORD = PropertiesUtil.getProperty("PASSWORD");
+	public static String TENANT_ID = "20160725";
+	public static String PASSWORD = "123456";
 	//ws请求用户名密码
 	public static final String WS_USERNAME="tianjian-ws";
 	public static final String WS_PASSWORD="tianjianquyu-panjin-ws";
