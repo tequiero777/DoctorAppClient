@@ -197,11 +197,11 @@
 	            
 	    </LinearLayout>
 	    
-	    <com.doctorapp.basic.ui.view.HorizontalListView
+	    <com.doctorapp.doctorappclient.basic.ui.view.HorizontalListView
 	        android:id="@+id/frem_report_listView"
 	        android:layout_width="fill_parent"
 	        android:layout_height="fill_parent"
 	        android:numColumns="3">
-	   </com.doctorapp.basic.ui.view.HorizontalListView>
+	   </com.doctorapp.doctorappclient.basic.ui.view.HorizontalListView>
    </LinearLayout>
 </LinearLayout>
