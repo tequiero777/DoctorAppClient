@@ -28,7 +28,7 @@
             android:textSize="18sp" >
         </TextView>
     </RelativeLayout>
-    <com.doctorapp.basic.ui.view.ProgressWebView
+    <com.doctorapp.doctorappclient.basic.ui.view.ProgressWebView
         android:id="@+id/webView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
